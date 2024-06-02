@@ -1,0 +1,17 @@
+{
+  "name": "playwright-practice",
+  "version": "1.0.0",
+  "description": "playwright practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.12.12"
+  }
+}
