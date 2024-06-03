@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('field name1', async ({ page }) => {
+test.only('field name1', async ({ page }) => {
     await page.goto('/');
     const signIn = page.getByText('Sign in');
     await signIn.click();
@@ -15,7 +15,7 @@ test('field name1', async ({ page }) => {
     await LastName.fill('Pupkin');
 
     const Email = page.locator('#signupEmail');
-    await Email.fill('vladimir.gazevich+6@getMaxListeners.com');
+    await Email.fill('vladimir.gazevich+7@getMaxListeners.com');
 
     const Pass = page.locator('#signupPassword');
     await Pass.fill('1234Qwerty');

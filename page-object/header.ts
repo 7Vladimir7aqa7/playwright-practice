@@ -1,6 +1,6 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 
-export class header {
+export class Header {
   readonly page: Page;
   readonly SignInButton: Locator;
   //readonly gettingStartedHeader: Locator;
