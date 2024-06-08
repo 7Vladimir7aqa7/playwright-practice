@@ -15,7 +15,7 @@ test.only('field name1', async ({ page }) => {
     await LastName.fill('Pupkin');
 
     const Email = page.locator('#signupEmail');
-    await Email.fill('vladimir.gazevich+7@getMaxListeners.com');
+    await Email.fill('vladimir.gazevich+14@getMaxListeners.com');
 
     const Pass = page.locator('#signupPassword');
     await Pass.fill('1234Qwerty');
@@ -23,7 +23,7 @@ test.only('field name1', async ({ page }) => {
     const rePass = page.locator('#signupRepeatPassword');
     await rePass.fill('1234Qwerty');
 
-    const login = page.locator('//button[@class="btn btn-primary"]');
+    const login = page.locator('//button[@class="btn btn-primary" and text()="Register"]');
     await login.click();
 });
 
